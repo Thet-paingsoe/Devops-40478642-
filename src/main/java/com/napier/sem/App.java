@@ -54,7 +54,7 @@ public class App
             try
             {
                 // Wait a bit for db to start
-                Thread.sleep(30000);
+                Thread.sleep(3000);
                 // Connect to database
                 con = DriverManager.getConnection("jdbc:mysql://" + s + "/employees?allowPublicKeyRetrieval=true&useSSL=false", "root", "example");
                 System.out.println("Successfully connected");
@@ -126,7 +126,7 @@ public class App
     public void displayEmployee(Employee emp)
     {
         if(emp == null){
-            System.out.println("There is no employee");
+            System.out.println(" There is no employee");
             return;
         }
         else if (emp != null)
